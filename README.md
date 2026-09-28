@@ -36,6 +36,9 @@ The application checks for and may download the following models:
 
 Downloading every model can require significant disk space and bandwidth.
 
+## Screenshot
+![Screenshot](first.jpg)
+
 ## Requirements
 
 - Python 3.8 or newer
