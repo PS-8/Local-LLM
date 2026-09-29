@@ -1,4 +1,4 @@
-# Local Privacy Ollama Client
+# Local Privacy LLM
 
 A single-file desktop chat application for interacting with local Ollama models through a Tkinter GUI.
 
