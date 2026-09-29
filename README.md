@@ -1,27 +1,18 @@
-# Local Privacy LLM
+# Local Privacy LLM Chat GUI
 
-A single-file desktop chat application for interacting with local Ollama models through a Tkinter GUI.
-
-The application performs background diagnostics at startup, attempts to start the Ollama server when necessary, downloads a predefined set of small models, and provides a simple chat interface.
+A lightweight, cross-platform desktop chat application for local LLMs built with Python and Tkinter. This application operates fully offline via [Ollama](https://ollama.com/), providing built-in lifecycle management, model handling, and real-time status logging in a single file.
 
 ## Screenshot
 ![Screenshot](first.jpg)
 
-## Features
+## Key Features
 
-- Local chat using the Ollama Python client
-- Tkinter desktop GUI
-- No direct HTTP API usage
-- Automatically installs missing Python packages at startup
-- Checks whether the Ollama server is reachable
-- Attempts to start `ollama serve` automatically
-- Waits for the Ollama server to become available
-- Checks for required models and pulls missing models
-- Supports Windows, macOS, and Linux on a best-effort basis
-- Background diagnostics so the GUI can start immediately
-- Scrollable chat history and diagnostics log
-- Model selection through a dropdown menu
-- `Ctrl+Enter` or `Command+Enter` sends a message
+* **Zero-Setup Dependency Management:** Automatically detects and installs required Python packages (`ollama`, `requests`) at runtime using `pip`.
+* **Automated Ollama Service Management:** Checks whether the local Ollama server is running and automatically attempts to launch `ollama serve` in a non-blocking background process if offline.
+* **Auto Model Downloader:** Checks for standard lightweight models on startup and automatically triggers CLI downloads for any missing required models.
+* **Real-Time Diagnostic Panel:** Built-in collapsible diagnostic log displaying background tasks, polling status, download progress, and error tracing.
+* **Direct Client Integration:** Interacts directly with local models via the official `ollama` Python package—no external API keys or intermediate HTTP standard requests needed.
+* **Cross-Platform:** Out-of-the-box compatibility with Windows, macOS, and Linux.
 
 ## Included Models
 
