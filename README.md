@@ -4,6 +4,9 @@ A single-file desktop chat application for interacting with local Ollama models 
 
 The application performs background diagnostics at startup, attempts to start the Ollama server when necessary, downloads a predefined set of small models, and provides a simple chat interface.
 
+## Screenshot
+![Screenshot](first.jpg)
+
 ## Features
 
 - Local chat using the Ollama Python client
@@ -35,9 +38,6 @@ The application checks for and may download the following models:
 - `qwen2.5:1.5b`
 
 Downloading every model can require significant disk space and bandwidth.
-
-## Screenshot
-![Screenshot](first.jpg)
 
 ## Requirements
 
